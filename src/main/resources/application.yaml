@@ -1,3 +1,21 @@
 spring:
   application:
     name: orderbkes
+    
+  datasource:
+    url: jdbc:mysql://localhost:3306/orderms_dev
+    username: orderms
+    password: Order_Pass!123
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+server:
+  port: 8080
+  servlet:
+    context-path: /api
